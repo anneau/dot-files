@@ -21,3 +21,4 @@ prompt pure
 
 # alias
 alias c=clear
+alias fig=docker-compose
