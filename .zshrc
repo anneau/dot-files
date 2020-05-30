@@ -22,3 +22,5 @@ prompt pure
 # alias
 alias c=clear
 alias fig=docker-compose
+alias logs-web=docker-compose logs --tail 30 -f web
+
