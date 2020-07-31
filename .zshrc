@@ -19,8 +19,13 @@ zplug load
 autoload -U promptinit; promptinit
 prompt pure
 
+source ~/.bashrc
+
 # alias
 alias c=clear
 alias fig=docker-compose
-alias logs-web=docker-compose logs --tail 30 -f web
+alias logs="docker-compose logs --tail 30 -f"
+alias rails="docker-compose run --rm web bundle exec rails"
+alias rubocop="docker-compose run --rm web bundle exec rubocop"
+alias rspec="docker-compose run --rm web bundle exec rspec"
 
